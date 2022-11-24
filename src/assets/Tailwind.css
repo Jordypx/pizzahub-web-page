@@ -3,3 +3,78 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* style */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,800;0,900;1,200;1,800;1,900&display=swap');
+
+:root{
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 1rem 7%;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .navbar {
+ margin-left: 5rem;
+}
+
+header .navbar a {
+    font-size: 1.6rem;
+    padding: .5rem 1.7rem;
+    border-radius: 5rem;
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: 600;
+    margin-left: 1.5rem;
+    text-align: center;
+}
+header .navbar a:hover {
+    color: rgb(234 88 12);
+}
+
+header .icons ion-icon,
+header .icons ion-icon,
+header .icons ion-icon{
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.831);
+    border-radius: 50%;
+    background: #eee;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+header .icons ion-icon:hover,
+header .icons ion-icon:hover,
+header .icons ion-icon:hover{
+    color: #fff;
+    background: rgb(234 88 12);
+    transform: rotate3d(360deg);
+}
+
+header .icons .menu {
+    display: none;
+}
