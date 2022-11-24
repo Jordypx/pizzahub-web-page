@@ -1,15 +1,15 @@
 <template>
-  <h1>legend</h1>
-  <p>the goat is welcome</p>
+ <Header />
 </template>
 
 <script>
-
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-   
+   Header,
   }
 }
 </script>
+ 
