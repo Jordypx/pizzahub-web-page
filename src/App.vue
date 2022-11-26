@@ -1,17 +1,17 @@
 <template>
  <Header />
- <HomeSection />
+ <ImageSlider />
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import HomeSection from './components/HomeSection.vue'
+import ImageSlider from './components/ImageSlider.vue'
 
 export default {
   name: 'App',
   components: {
    Header,
-   HomeSection,
+   ImageSlider,
   }
 }
 </script>
