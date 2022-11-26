@@ -163,21 +163,36 @@ header .icons .menu{
         background: #fff;
         border-top: .1rem solid rgba(0,0,0,.2);
         border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+
         /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
         display: none;
     }
 
     header .navbar a{
         display: block;
-        padding: 1.5rem;
-        margin: 1rem;
+        padding: 1.9rem;
+        margin-bottom: 1.5rem;
         font-size: 2rem;
+        font-weight: 500;
         background: #eee;
+        border-radius: 1rem;
+        text-align: left;
+    }
+
+    header .navbar .menu-link a {
+        background: rgb(234 88 12);
     }
 
     .close-menu {
         display: block;
+    }
+
+    .search-form .search-box {
+        width: 90%;
+        margin:0 1rem;
     }
 }
 

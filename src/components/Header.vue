@@ -10,10 +10,10 @@
      
     <ion-icon @click="CloseClick" class="close-menu" name="close"></ion-icon>
 
-    <a href="#menu">Menu</a>
+    <a href="#menu" class="menu-link">Menu</a>
     <a href="#about">About</a>
-    <a href="#reviews">reviews</a>
-    <a href="#orders">orders</a>    
+    <a href="#reviews">Reviews</a>
+    <a href="#orders">Orders</a>    
     </nav>
        </div>
 
