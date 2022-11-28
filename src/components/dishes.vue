@@ -1,10 +1,10 @@
 <template>
     <section class="dishes">
     <h3 class="sub-heading">
-    our dishes
+    our menu
     </h3>
     <h1 class="heading">
-        popular dishes
+        popular menu
     </h1>
 
     <div class="box-container">
