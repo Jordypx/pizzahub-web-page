@@ -20,7 +20,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    transform: all .2s linear;
+    transform: all .2 linear;
 }
 
 html {
@@ -28,14 +28,6 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
-}
-
-.home {
-    padding: 2rem 9%;
-}
-
-.home:nth-child(even) {
-    background: #eee;
 }
 
 .btn {
@@ -155,35 +147,38 @@ header .icons .menu{
     margin-top: 22%;
 }
 
+.home {
+    padding: 2rem 9%;
+}
+
+/* .home:nth-child(even) {
+    background: #eee;
+} */
+
 .home .home-slider .slide {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 9rem;
+    gap: 6rem;
     padding-top: 9rem;
 }
 
 .home .home-slider .slide .content {
     flex: 1 1 45rem;
     padding-top: 7rem;
-    line-height: 1.5;
+    line-height: 1.4;
+    margin-top: -1.3rem;
 }
 
 .home .home-slider .slide .image {
+    margin-right: -9rem;
     flex: 1 1 45rem;
 }
 
 .home .home-slider .slide .image img {
-    width: 90%;
+    width: 95%;
 }
 
-.home .home-slider .slide .image img .bg-color {
-    background: none;
-}
-
-.home .home-slider .slide .image img .pepper-pizza {
-    max-width: 80%;
-}
 
 .home .home-slider .slide .content span {
     color: rgb(234 88 12);
@@ -193,19 +188,125 @@ header .icons .menu{
 
 .home .home-slider .slide .content h3 {
     color: rgba(0, 0, 0, 0.738);
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 600;
-    margin-top: -1.3rem;
+    margin-top: -1rem;
 }
 
 .home .home-slider .slide .content p {
-    color: rgba(0, 0, 0, 0.703);
+    color: rgba(0, 0, 0, 0.935);
     font-size: 2.2rem;
     padding:5rem 0 ;
     line-height: 1.5;
     margin-top: -3.95rem;
 }
 
+.swiper-pagination .buttet-active {
+   background: rgb(234 88 12);
+}
+
+section:nth-child(even) {
+    background: #eee;
+}
+
+.sub-heading {
+    text-align: center;
+    color: rgb(234 88 12);
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.heading {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.835);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.dishes {
+    padding: 1.5rem;
+}
+
+.dishes .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+     padding: 2.5rem;
+     background: #fff;
+     border-radius: .5rem;
+     border: .1rem solid rgba(0, 0, 0, 0.2);
+     box-shadow: var(--box-shadow);
+     position: relative;
+     overflow: hidden;
+     text-align: center;
+}
+
+.dishes .box-container .box img {
+    margin: 0 auto;
+    width: 58%;
+}
+
+.dishes .box-container .box .heart,
+.dishes .box-container .box .eye {
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    padding: .5rem;
+    color: rgba(0, 0, 0, 0.797);
+}
+
+.dishes .box-container .box .heart:hover,
+.dishes .box-container .box .eye:hover {
+    background: rgb(234 88 12);
+    color: #fff;
+}
+
+.dishes .box-container .box .heart {
+    right:-15rem;
+}
+
+.dishes .box-container .box .eye {
+    left:-15rem;
+}
+
+.dishes .box-container .box:hover .heart {
+    right:1.5rem;
+}
+
+.dishes .box-container .box:hover .eye {
+    left:1.5rem;
+}
+
+.dishes .box-container .box h3 {
+    color: rgba(0, 0, 0, 0.796);
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars {
+    padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars ion-icon {
+    font-size: 1.7rem;
+    color: rgb(234 88 12);
+}
+
+.dishes .box-container .box span {
+    color: rgb(234 88 12);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
 
 
 
@@ -220,6 +321,12 @@ header .icons .menu{
 
 
 
+
+
+
+
+
+/* mobile-view */
 
 @media (max-width:991px){
    html {
@@ -271,11 +378,41 @@ header .icons .menu{
         width: 90%;
         margin:0 1rem;
     }
+
+    .home .home-slider .slide .content h3 {
+        font-size: 6rem;
+    }
+
+    .home .home-slider .slide .image {
+        margin-right: -13rem;
+        margin-top: -3rem;
+    }
+
+    .home .home-slider .slide .image img {
+        width: 80%;
+    }
 }
 
 @media (max-width:991px){
     html {
      font-size: 50%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .dishes .box-container .box img {
+       height: auto;
+       width: 90%;
+    }
+
+    .dishes .box-container {
+        grid-template-columns: repeat(1, minmax(27rem, 1fr));
+        gap: 1.5rem;
     }
  }
 

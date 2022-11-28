@@ -45,3 +45,31 @@
 
 
 </section>
+
+
+const swiperTextBase = ref( value: [
+         {
+         //    id: "1",
+         //    head: 'Our special menu',
+         //    sub: "Magarita Pizza",
+         //    desciption: '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque de',
+         //    link: 'Order Now',
+         //    img: 'https://media.istockphoto.com/id/1168754685/photo/pizza-margarita-with-cheese-top-view-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=psLRwd-hX9R-S_iYU-sihB4Jx2aUlUr26fkVrxGDfNg=" alt="margarita-pizza'
+         // },
+         // {
+         //    id: "2",
+         //    head: 'Our special menu',
+         //    sub: "Pepperoni Pizza",
+         //    desciption: '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque de',
+         //    link: 'Order Now',
+         //    img: 'https://valentinos.com/wp-content/uploads/2019/06/pepperoni.png'
+         // },
+         // {
+         //    id: "3",
+         //    head: 'Our special menu',
+         //    sub: "Chicken Pizza",
+         //    desciption: '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque de',
+         //    link: 'Order Now',
+         //    img: 'https://images.squarespace-cdn.com/content/v1/5cbf5a350cf57df7fb43982e/1586206380263-0BR398YMMH9LV8RU896Y/Palooza.png'
+         // }
+      ])
