@@ -1,5 +1,5 @@
 <template>
- <div class="about">
+ <section class="about">
     <h3 class="sub-heading">
     about us
     </h3>
@@ -34,7 +34,7 @@
             <a href="#" class="btn btn-position">learn more</a>
         </div>
     </div>
- </div>
+</section>
 </template>
 
 

@@ -7,9 +7,7 @@
       delay: 7500,
       disableOnInteraction: false,
     }"
-    :pagination="{
-      clickable: false,
-    }"
+   
    >
 
    <swiper-slide v-for="text in swiperTextBase" :key="text.id" class="home">
@@ -64,7 +62,7 @@ export default {
          {
             id: "1",
             head: 'Our special menu',
-            sub: "Magarita Pizza",
+            sub: "cheese Pizza",
             desciption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque de',
             link: 'Order Now',
             img: 'https://eatcaulipower.com/assets/images/products/_detail/854934007099_product_2022-07-25-230439_lmae.jpg'
@@ -80,10 +78,10 @@ export default {
          {
             id: "3",
             head: 'Our special menu',
-            sub: "Pepperoni Pizza",
+            sub: "beef Pizza",
             desciption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque de',
             link: 'Order Now',
-            img: 'https://galaxypizza.com.ng/wp-content/uploads/2018/05/PEPPERONI-PIZZA-03-e1643717811278.jpg'
+            img: 'https://0bb8856ba8259ec33e3d-a40599a114f3a4c6d0979c3ffe0b2bf5.ssl.cf2.rackcdn.com/0287525000000_CL_hyvee_default_large.jpeg'
          },
       ]
       }

@@ -148,7 +148,7 @@ header .icons .menu{
 }
 
 .home {
-    padding: 2rem 9%;
+    padding: 6rem;
 }
 
 /* .home:nth-child(even) {
@@ -160,7 +160,8 @@ header .icons .menu{
     align-items: center;
     flex-wrap: wrap;
     gap: 6rem;
-    padding-top: 9rem;
+    padding-top: 7rem;
+    margin-right: -9rem;
 }
 
 .home .home-slider .slide .content {
@@ -168,6 +169,7 @@ header .icons .menu{
     padding-top: 7rem;
     line-height: 1.4;
     margin-top: -1.3rem;
+    margin-left: 9rem;
 }
 
 .home .home-slider .slide .image {
@@ -176,7 +178,7 @@ header .icons .menu{
 }
 
 .home .home-slider .slide .image img {
-    width: 95%;
+    width: 80%;
 }
 
 
@@ -378,8 +380,41 @@ section:nth-child(even) {
     margin-top: 1rem;
 }
 
+.wrappers {
+    padding: 10rem;
+}
 
+.review .slides {
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    position: relative;
+}
 
+.review .slides .user img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slides .user h3 {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slides .user ion-icon {
+    font-size: 1.3rem;
+    color: rgb(234 88 12);
+}
+
+.review .slides p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.795);
+}
 
 
 
@@ -448,13 +483,38 @@ section:nth-child(even) {
         margin:0 1rem;
     }
 
+    .home .home-slider .slide {
+        margin-left: -12rem;
+    }
+
     .home .home-slider .slide .content h3 {
         font-size: 6rem;
     }
 
     .home .home-slider .slide .image {
-        margin-right: -13rem;
-        margin-top: -3rem;
+        width: 100%;
+        margin-left: 9rem;
+        margin-top: -5rem;
+        /* padding: 5rem; */
+    }
+
+    .home .home-slider .slide .image img {
+        width: 78%;
+    }
+   
+}
+
+@media (max-width: 470px) {
+    .home {
+        padding: 8rem;
+    }
+
+    .home .home-slider .slide {
+        margin-left: -12rem;
+    }
+
+    .home .home-slider .slide .image {
+      margin-left: 7rem;
     }
 
     .home .home-slider .slide .image img {
@@ -482,6 +542,11 @@ section:nth-child(even) {
     .dishes .box-container {
         grid-template-columns: repeat(1, minmax(27rem, 1fr));
         gap: 1.5rem;
+    }
+
+    .btn-position {
+        margin-left: .1rem;
+        margin-bottom: 2rem;
     }
  }
 
