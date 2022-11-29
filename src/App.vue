@@ -4,6 +4,7 @@
  <dishes />
  <About />
  <reviews />
+ <Footer />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import ImageSlider from './components/ImageSlider.vue'
 import dishes from './components/dishes.vue'
 import About from './components/About.vue'
 import reviews from './components/reviews.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
    ImageSlider,
    dishes,
    About,
-  reviews
+   reviews,
+   Footer
   }
 }
 </script>

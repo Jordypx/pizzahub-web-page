@@ -6,21 +6,42 @@
     
 
     <Swiper 
+    :slidesPerView="1"
     :modules="modules"
     :spaceBetween="20"
-    :centeredSlides="true"
     :autoplay="{
-      delay: 4500,
+      delay: 7500,
       disableOnInteraction: false,
     }"
-   
+    :pagination="{
+      clickable: true,
+    }"
+    :breakpoints="{
+      '0': {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      '640': {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      '768': {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      '1024': {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    }"
+   class="swiper"
    >
 
-   <swiper-slide v-for="text in swiperText" :key="text.id" class="review-slider">
+   <swiper-slide v-for="text in swiperText" :key="text.id" class="swiper-slide">
      
     <div class="wrappers">
         <div class="slides">
-            <div class="user flex items-center gap-6 pb-6">
+            <div class="user">
                 <img :src="text.img" alt="images">
                 <div class="user-info">
                     <h3>{{ text.name }}</h3>
@@ -38,7 +59,6 @@
     </div>
 
    </swiper-slide>
-
 </Swiper>
 </div>
 </template>
@@ -71,7 +91,7 @@ export default {
         swiperText: [
             {
                 id: "1",
-                name: "sarah stoneback",
+                name: "sarah stone",
                 para: "This resaurant is undeniably a five star restaurant I advice any person should try this cause it has become one of my favourite pizza places to go to.",
                 img: "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?s=170667a&w=0&k=20&c=yJI4R1SULPnrLj1sxEwxfMaA7CUndElkyd9DHkoAJ1U="
             },
@@ -93,13 +113,6 @@ export default {
                 para: "This resaurant is undeniably a five star restaurant I advice any person should try this cause it has become one of my favourite pizza places to go to.",
                 img: "https://media.istockphoto.com/id/1338134336/photo/headshot-portrait-african-30s-man-smile-look-at-camera.jpg?b=1&s=170667a&w=0&k=20&c=j-oMdWCMLx5rIx-_W33o3q3aW9CiAWEvv9XrJQ3fTMU="
             },
-            {
-                id: "5",
-                name: "Amia yusuf",
-                para: "This resaurant is undeniably a five star restaurant I advice any person should try this cause it has become one of my favourite pizza places to go to.",
-                img: "https://t4.ftcdn.net/jpg/04/44/53/99/360_F_444539901_2GSnvmTX14LELJ6edPudUsarbcytOEgj.jpg"
-            },
-
         ]
     }
   },
@@ -114,7 +127,7 @@ export default {
   setup() {
       
       return {
-         modules: [Autoplay, Pagination]
+         modules: [ Autoplay, Pagination]
       }
    },
 }
