@@ -382,7 +382,7 @@ section:nth-child(even) {
 
 
 .review {
-  background: #eee;
+    background: #fff;
 }
 
 .review .wrappers {
@@ -390,7 +390,7 @@ section:nth-child(even) {
   }
 
 .review .wrappers .slides {
-    background: #fff;
+    background: rgba(238, 238, 238, 0.662);
     width: 120%;
     padding: 3rem;
   }
@@ -426,34 +426,63 @@ section:nth-child(even) {
     color: rgba(0, 0, 0, 0.795);
 }
 
+.footer {
+    background: #eee;
+}
+
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    padding: 8rem;
 }
 
 .footer .box-container .box h3 {
     padding: .5rem 0;
     font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.823);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.961);
+}
+
+.footer .box-container .box .logo {
+    margin-left: 5rem;
 }
 
 .footer .box-container .box a {
     display: block;
-    padding: .5rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.679);
+}
+
+
+.footer .box-container .box .logo-icon {
+    display: flex;
+    justify-content: space-around;
+    padding: .1rem 3rem;
+    margin-right: 3rem;
     font-size: 2.5rem;
     color: rgba(0, 0, 0, 0.823);
 }
 
+.footer .box-container .box .logo-icon a ion-icon {
+    font-size: 3rem;
+}
+
+.footer .box-container .box .logo-icon a:hover {
+    color: rgb(234 88 12);
+}
+
 .footer .box-container .box a:hover {
     color: rgb(234 88 12);
-    text-decoration: underline;
 }
 
 .footer .credit {
     text-align: center;
     border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.833);
     padding: 5rem;
     padding-top: 1.5rem;
@@ -570,12 +599,12 @@ section:nth-child(even) {
       }
     
     .review .wrappers .slides {
-        background: #fff;
+        background: rgba(238, 238, 238, 0.429);
         width: 110%;
         align-items: center;
         padding: 4rem;
         padding-bottom: 5rem;
-        margin-left: -2.3rem;
+        margin-left: -1.8rem;
       }
 }
 
@@ -610,6 +639,14 @@ section:nth-child(even) {
     .btn-position {
         margin-left: .1rem;
         margin-bottom: 2rem;
+    }
+
+    .footer .box-container .box .logo {
+        display: none;
+    }
+
+    .footer .box-container .box .logo-icon   {
+       padding-top: 3rem;
     }
  }
 

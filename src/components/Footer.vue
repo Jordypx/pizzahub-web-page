@@ -7,7 +7,6 @@
                 <a href="#">japan</a>
                 <a href="#">Nigeria</a>
                 <a href="#">Germany</a>
-                <a href="#">UK</a>
             </div>
 
             <div class="box">
@@ -26,16 +25,19 @@
                 <a href="#">wale, UK - 100204</a>
             </div>
 
-            <div class="box">
-                <h3>follow us</h3>
+           <div class="box">
+            <h3 class="logo">follow us</h3>
+            <div class="logo-icon">
                 <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+               </div>
+           </div>
         </div>
-
-        <div class="credit"> copyright @ 2021 by <span>pizza hut</span></div>
+        <div class="copyright">
+            <div class="credit"> copyright @ 2021 by <span>pizza hut</span></div>
+        </div>
     </div>
 </template>
 
