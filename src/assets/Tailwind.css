@@ -391,8 +391,8 @@ section:nth-child(even) {
 
 .review .wrappers .slides {
     background: rgba(238, 238, 238, 0.662);
-    width: 120%;
-    padding: 3rem;
+    width: 100%;
+    padding: 5rem;
   }
 
 .review .slides .user {
